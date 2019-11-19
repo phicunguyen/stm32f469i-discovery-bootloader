@@ -14,8 +14,8 @@ The bootloader program:
 The led program must do the following.
   1. Modify STM32F469NI_FLASH.ld
   
-     from FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 2048K
-     to   FLASH (rx)      : ORIGIN = 0x8010000, LENGTH = 2048K  (where is the application (led) reside.
+    from FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 2048K
+    to   FLASH (rx)      : ORIGIN = 0x8010000, LENGTH = 2048K  (where is the application (led) reside.
      
   2. Change VECT_TAB_OFFSET system_stm32f4xx.c 
   
