@@ -1,0 +1,5 @@
+flash_if.c:52:6:FLASH_If_FlashUnlock	0	static
+flash_if.c:57:6:FLASH_If_Flashlock	0	static
+flash_if.c:67:12:FLASH_If_ReadOutProtectionStatus	8	static
+flash_if.c:93:10:FLASH_If_EraseSectors	8	static
+flash_if.c:129:10:FLASH_If_Write	8	static

@@ -1,0 +1,6 @@
+fatfs.c:54:7:get_fattime	0	static
+fatfs.c:62:6:flash_program	40	static
+fatfs.c:96:6:sysreset_Jump	0	static
+fatfs.c:102:6:jumptoapplicaion	8	static
+fatfs.c:80:6:flash_download	8	static
+fatfs.c:38:6:MX_FATFS_Init	8	static
