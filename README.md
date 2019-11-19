@@ -13,10 +13,25 @@ The bootloader program:
   
 The led program must do the following.
   1. Modify STM32F469NI_FLASH.ld
+  
      from FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 2048K
      to   FLASH (rx)      : ORIGIN = 0x8010000, LENGTH = 2048K  (where is the application (led) reside.
+     
   2. Change VECT_TAB_OFFSET system_stm32f4xx.c 
+  
     from #define VECT_TAB_OFFSET  0x00000
     to   #define VECT_TAB_OFFSET  0x10000 
+  
+  Achieved.
+    1. How to mount the SD Card
+    2. How to open a file in SD Card.
+    3. How to read the file from SD Card.
+    4. How erase flash and program it.
+    5. Where bootloader and application address reside.
+       bootlader addrest start at 0x000000 and up to the file size.
+       application address start at 0x10000 and up to the file size.
+       (application address don't have to be at 0x10000 (it depends on how big your bootloader).
+       (For my bootloader, it has to display the LCD, program the stm32, FPGA and external flash
+          that why it need that much memory).
     
   Have fun and enjoy it.
